@@ -11,14 +11,13 @@ This project visualizes the Euclidean Minimum Spanning Tree (EMST) algorithm usi
 - Interactive controls:
   - Add points by mouse click
   - Zoom and pan the camera
-  - Adjust animation speed
 - Optimized algorithms using KD-Trees for efficient neighbor search
 - Support for large datasets (up to 10,000 points)
 - Visual settings display showing point density and spread
 
 ## Technologies
 
-- **C# 10.0** - Primary programming language
+- **C# 13.0** - Primary programming language
 - **MonoGame 3.8** - Cross-platform game development framework
 - **.NET 8.0** - Runtime environment
 - **KD-Trees** - Spatial partitioning data structure

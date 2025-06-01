@@ -7,7 +7,7 @@ public static class KruskalAlgorithm
     public static List<Edge> BuildEmst(List<Point> points)
     {
         var kdTree = new KDTree(points);
-        HashSet<Edge> edges = kdTree.GetAllEdges(k: Math.Min(points.Count, 6));
+        HashSet<Edge> edges = kdTree.GetAllEdges(k: Math.Min(points.Count, 10));
         return FindMst(edges, points);
     }
 
@@ -26,7 +26,7 @@ public static class KruskalAlgorithm
 
         foreach (var point in points)
         {
-            var neighbors = tree.GetNearestNeighbours(new[] { point.X, point.Y }, count: Math.Min(points.Count, 6));
+            var neighbors = tree.GetNearestNeighbours(new[] { point.X, point.Y }, count: Math.Min(points.Count, 10));
 
             foreach (var neighbor in neighbors)
             {

@@ -220,7 +220,7 @@ public class Game1 : Game
             _offset = Vector2.Zero;
             _showSettings = true;
             _settingsDisplayTime = 0;
-            GeneratePoints();
+            // GeneratePoints();
         }
 
         // Таймер відображення налаштувань

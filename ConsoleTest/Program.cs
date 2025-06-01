@@ -61,9 +61,9 @@ var ultimate = new List<Point>
     new Point(7, 6),
 };
 
-var testMax = PointGenerator.GenerateRandomPoints(10000000, 0, 0, 100000, 100000, 1488);
+var testMax = PointGenerator.GenerateRandomPoints(500000, 0, 0, 100000, 100000, 1488);
 var startTime = DateTime.Now;
-var emst = KruskalAlgorithm.BuildEmstLibFunc(testMax);
+var emst = KruskalAlgorithm.BuildEmst(testMax);
 var endTime = DateTime.Now;
 
 // foreach (var edge in emst)
